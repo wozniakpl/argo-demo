@@ -1,0 +1,5 @@
+server:
+  service:
+    type: LoadBalancer
+    servicePortHttp: 8080
+    servicePortHttps: 8443

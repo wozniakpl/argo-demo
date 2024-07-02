@@ -1,0 +1,31 @@
+redis-cluster:
+  enabled: false
+postgresql:
+  enabled: true
+postgresql-ha:
+  enabled: false
+
+persistence:
+  enabled: true
+
+gitea:
+  admin:
+    username: gitea
+    password: gitea
+    email: admin@admin.local
+  config:
+    database:
+      DB_TYPE: postgres
+    session:
+      PROVIDER: db
+    cache:
+      ADAPTER: memory
+    queue:
+      TYPE: level
+    indexer:
+      ISSUE_INDEXER_TYPE: bleve
+      REPO_INDEXER_ENABLED: true
+
+service:
+  http:
+    type: LoadBalancer
