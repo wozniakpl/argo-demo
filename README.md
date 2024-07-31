@@ -60,12 +60,12 @@ This project sets up a Minikube environment with Gitea and ArgoCD, and deploys a
 
 ### 🐙 Gitea
 
-- **Chart Name:** gitea-charts/gitea
+- **Chart Name:** [https://dl.gitea.io/charts/](https://dl.gitea.io/charts/)
 - **Values File:** `gitea.values.yml`
 
 ### 🚀 ArgoCD
 
-- **Chart Name:** argo/argo-cd
+- **Chart Name:** [https://argoproj.github.io/argo-helm](https://argoproj.github.io/argo-helm)
 - **Values File:** `argo.values.yml`
 
 ## 🔑 Credentials
