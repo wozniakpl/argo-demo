@@ -4,7 +4,6 @@ from contextlib import contextmanager
 import json
 
 token_file = "gitea.token"
-application_data_file = "gitea.ci.app.json"
 
 
 def get_api_token(svc_ip, svc_port):
@@ -147,7 +146,6 @@ def main():
     os.chdir(os.path.dirname(os.path.realpath(__file__)))
     if args.clean:
         os.system(f"rm {token_file}")
-        os.system(f"rm {application_data_file}")
         os.system("rm -rf ./repos")
         os.system("minikube delete")
 
