@@ -74,7 +74,7 @@ This project sets up a Minikube environment with Gitea and ArgoCD, and deploys a
     - 🔑 Password: `gitea`
 
 - **ArgoCD:**
-    - 🌐 URL: [https:/localhost:8443](https:/localhost:8443)
+    - 🌐 URL: [https://localhost:8443](https://localhost:8443)
     - 👤 Username: `admin`
     - 🔑 Password: Fetched from `argocd-initial-admin-secret` (visible in terminal)
 
