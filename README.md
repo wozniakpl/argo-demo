@@ -37,6 +37,8 @@ This project sets up a Minikube environment with Gitea and ArgoCD, and deploys a
     - 📦 Deploy ArgoCD and configure it to manage the sample application.
     - 🌐 Start a Minikube tunnel which will keep running until the user presses `ENTER`.
 
+    **Context Note:** This script is designed to be idempotent. After making any changes, you can simply press `ENTER`, use the up arrow to recall the previous command, and start the `main.py` script from scratch. The script detects changes in the repositories within the `src/` directory. If you change anything in `src/argo`, it will reapply those changes to the cluster. Similarly, any changes in the `infra` repository will be committed and reflected in Gitea. Helm deployments are upgraded, so changing `*.values.yml` files will also be reflected in the cluster.
+
 3. **To clean up and start from scratch:**
     ```sh
     python3 main.py --clean
@@ -69,7 +71,7 @@ This project sets up a Minikube environment with Gitea and ArgoCD, and deploys a
 ## 🔑 Credentials
 
 - **Gitea:**
-    - 🌐 URL: [http:/localhost:3000](http:/localhost:3000)
+    - 🌐 URL: [http://localhost:3000](http://localhost:3000)
     - 👤 Username: `gitea`
     - 🔑 Password: `gitea`
 
