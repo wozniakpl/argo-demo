@@ -69,14 +69,14 @@ This project sets up a Minikube environment with Gitea and ArgoCD, and deploys a
 ## 🔑 Credentials
 
 - **Gitea:**
-    - 🌐 URL: `http://<gitea-svc-ip>:<gitea-svc-port>`
+    - 🌐 URL: [http:/localhost:3000](http:/localhost:3000)
     - 👤 Username: `gitea`
     - 🔑 Password: `gitea`
 
 - **ArgoCD:**
-    - 🌐 URL: `http://<argo-svc-ip>:<argo-svc-port>`
+    - 🌐 URL: [https:/localhost:8443](https:/localhost:8443)
     - 👤 Username: `admin`
-    - 🔑 Password: Fetched from `argocd-initial-admin-secret`
+    - 🔑 Password: Fetched from `argocd-initial-admin-secret` (visible in terminal)
 
 ## 🌐 Minikube Tunnel
 
